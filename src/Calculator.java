@@ -20,22 +20,13 @@ public class Calculator {
                 System.out.print("Enter the second number: ");
                 b = kb.nextFloat();
 
+                // enhanced switch case
                 switch (op) {
-                    case '+':
-                        result = a + b;
-                        break;
-                    case '-':
-                        result = a - b;
-                        break;
-                    case '*':
-                        result = a * b;
-                        break;
-                    case '/':
-                        result = a / b;
-                        break;
-                    case '%':
-                        result = a % b;
-                        break;
+                    case '+' -> result = a + b;
+                    case '-' -> result = a - b;
+                    case '*' -> result = a * b;
+                    case '/' -> result = a / b;
+                    case '%' -> result = a % b;
                 }
 
                 System.out.println("Result: " + result);
