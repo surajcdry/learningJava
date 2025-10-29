@@ -1,6 +1,5 @@
 package arrays;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Average {
@@ -20,5 +19,7 @@ public class Average {
         }
 
         System.out.println("The average: " + (sum / count) + "\n");
+
+        kb.close();
     }
 }
