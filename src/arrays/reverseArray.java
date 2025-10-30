@@ -22,21 +22,21 @@ public class reverseArray {
         for (int num : reverse){
             System.out.print(num + " ");
         }
-
         System.out.println("\n");
-
+        
         kb.close();
     }
 
     static int[] reverseThis(int[] nums) {
         int temp, size = nums.length;
+        int[] reverse = new int[size]; // to not modify the original array
 
         for (int i = 0; i < (nums.length / 2); i++) {
             temp = nums[i];
-            nums[i] = nums[(size - 1) - i];
-            nums[size - 1 - i] = temp;
+            reverse[i] = nums[(size - 1) - i];
+            reverse[size - 1 - i] = temp;
         }
 
-        return nums;
+        return reverse;
     }
 }
