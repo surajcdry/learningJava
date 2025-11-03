@@ -11,7 +11,7 @@ public class indexFinder {
 
         int[] arr = new int[size];
         System.out.print("Enter an array (separated by space): ");
-        for (int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             arr[i] = kb.nextInt();
         }
 
@@ -20,20 +20,22 @@ public class indexFinder {
 
         int index = findTheIndex(arr, target);
 
-        if (index == -1){
+        if (index == -1) {
             System.out.println("\nTarget not found.\n");
         } else {
             System.out.println("\nThe index: " + index + "\n");
         }
+
+        kb.close();
     }
 
-    static int findTheIndex(int[] arr, int target){
-        if (arr.length == 0){
+    static int findTheIndex(int[] arr, int target) {
+        if (arr.length == 0) {
             return -1;
         }
 
-        for (int index = 0; index < arr.length; index++){
-            if (arr[index] == target){
+        for (int index = 0; index < arr.length; index++) {
+            if (arr[index] == target) {
                 return index;
             }
         }
