@@ -19,7 +19,7 @@ public class searchIn2dArray {
         for (int i = 0; i < arr.length; i++){
             for (int j = 0; j < arr[i].length; j++){
                 if (arr[i][j] == target){
-                    return "" + i + ", " + j;
+                    return "" + i + ", x" + j;
                 }
             }
         }
