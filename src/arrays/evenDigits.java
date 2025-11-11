@@ -4,7 +4,7 @@ package arrays;
 
 public class evenDigits {
     public static void main(String[] args) {
-        int[] nums = {555,901,482,1771};
+        int[] nums = {555,-9011,482,1771};
 
         System.out.println(findNumbers(nums));
     }
@@ -13,11 +13,18 @@ public class evenDigits {
         int count = 0, temp;
 
         for (int num : nums){
-            temp = 0;
-            while (num > 0){
-                temp++;
-                num /= 10;
+            // temp = 0;
+            // while (num > 0){
+            //     temp++;
+            //     num /= 10;
+            // }
+
+            // simpler solution
+            if (num < 0){
+                num *= -1; // negative number to positive
             }
+
+            temp = (int) Math.log10(num) + 1;
 
             if (temp % 2 == 0){
                 count++;
