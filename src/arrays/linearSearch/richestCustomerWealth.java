@@ -1,4 +1,4 @@
-package arrays;
+package arrays.linearSearch;
 
 // https://leetcode.com/problems/richest-customer-wealth/
 
