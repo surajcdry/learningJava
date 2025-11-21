@@ -1,4 +1,4 @@
-package linearSearch;
+package arrays.linearSearch;
 
 public class searchIn2dArray {
     public static void main(String[] args) {
